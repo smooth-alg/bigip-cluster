@@ -1,0 +1,109 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 8 (0x8)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=WA, L=Seattle, CN=intermediate-ca.example.com
+        Validity
+            Not Before: May 14 23:38:44 2014 GMT
+            Not After : Jul  2 23:38:44 2019 GMT
+        Subject: C=US, ST=WA, L=Seattle, OU=people, CN=client7/emailAddress=client7@example.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:dc:34:24:b3:4f:fe:87:4d:ef:a6:f4:63:3c:39:
+                    6b:5e:2c:62:4f:7d:e8:d1:c9:27:69:f7:cc:14:99:
+                    ac:24:1e:2d:88:11:b2:13:d9:b4:cd:75:33:ff:da:
+                    de:36:c2:a1:f0:7a:25:56:b6:6b:b4:d3:b5:55:98:
+                    e1:37:ba:f9:c1:f2:22:26:81:6c:8b:6d:c0:bc:ea:
+                    c1:03:e7:80:51:8e:5a:80:f4:0c:0a:9e:be:8e:e3:
+                    fc:37:52:e4:87:f7:e0:f3:2c:f0:fd:ca:27:e3:c4:
+                    e0:5d:46:14:ca:26:34:0c:bc:29:14:fa:16:d2:8c:
+                    85:01:6c:7c:36:97:af:84:0a:9f:4a:4f:8c:c3:c4:
+                    20:55:42:a8:f4:01:08:79:37:62:7e:58:5c:91:8e:
+                    ec:db:31:56:59:da:bb:dc:1d:8c:ac:32:b0:4c:8d:
+                    57:c9:d6:d8:b5:89:a4:d3:b7:0d:0a:2a:78:44:98:
+                    89:95:6e:8e:9f:3a:92:94:62:0f:33:2a:50:a6:51:
+                    a6:48:d7:ef:6c:6b:bb:50:e9:41:50:71:42:51:41:
+                    73:74:1d:6e:af:74:e4:ed:43:d8:e5:f9:59:a9:5e:
+                    e7:48:00:ff:d8:76:2d:e4:eb:25:b2:1c:49:d5:7c:
+                    e4:13:41:1b:ff:24:9d:3c:96:a8:aa:58:7b:04:25:
+                    a8:19
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Client
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            Netscape Comment: 
+                OpenSSL Certificate for SSL Client
+            X509v3 Subject Alternative Name: 
+                email:client7@example.com
+            X509v3 CRL Distribution Points: 
+                URI:ldap://ldap.example.com:389/CN=crl,DC=example,DC=com
+                URI:http://crl.example.com/crl
+
+    Signature Algorithm: sha1WithRSAEncryption
+        27:d5:8f:9d:ad:65:71:bc:df:9d:fe:77:1e:ab:51:48:94:28:
+        45:4c:70:61:22:ed:a3:c8:e4:b9:d2:72:f5:f1:cc:b6:53:1a:
+        62:93:06:04:60:77:4c:20:9f:3c:88:15:a0:23:c7:be:10:ac:
+        f9:78:34:1a:d5:01:9b:5f:e2:19:a9:50:a6:8c:fd:49:12:66:
+        8d:14:f3:85:ea:7d:90:3e:5e:3f:7e:d3:af:bb:2e:b4:a2:26:
+        59:aa:d5:87:92:c1:b1:63:75:b8:3e:e0:95:6c:84:fd:80:d1:
+        57:8a:72:e9:71:5b:9e:64:99:a1:b7:65:5b:98:d2:fa:f4:c5:
+        32:ec
+-----BEGIN CERTIFICATE-----
+MIIDvzCCAyigAwIBAgIBCDANBgkqhkiG9w0BAQUFADBSMQswCQYDVQQGEwJVUzEL
+MAkGA1UECBMCV0ExEDAOBgNVBAcTB1NlYXR0bGUxJDAiBgNVBAMTG2ludGVybWVk
+aWF0ZS1jYS5leGFtcGxlLmNvbTAeFw0xNDA1MTQyMzM4NDRaFw0xOTA3MDIyMzM4
+NDRaMHMxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJXQTEQMA4GA1UEBxMHU2VhdHRs
+ZTEPMA0GA1UECxMGcGVvcGxlMRAwDgYDVQQDEwdjbGllbnQ3MSIwIAYJKoZIhvcN
+AQkBFhNjbGllbnQ3QGV4YW1wbGUuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEA3DQks0/+h03vpvRjPDlrXixiT33o0cknaffMFJmsJB4tiBGyE9m0
+zXUz/9reNsKh8HolVrZrtNO1VZjhN7r5wfIiJoFsi23AvOrBA+eAUY5agPQMCp6+
+juP8N1Lkh/fg8yzw/con48TgXUYUyiY0DLwpFPoW0oyFAWx8NpevhAqfSk+Mw8Qg
+VUKo9AEIeTdiflhckY7s2zFWWdq73B2MrDKwTI1XydbYtYmk07cNCip4RJiJlW6O
+nzqSlGIPMypQplGmSNfvbGu7UOlBUHFCUUFzdB1ur3Tk7UPY5flZqV7nSAD/2HYt
+5OslshxJ1XzkE0Eb/ySdPJaoqlh7BCWoGQIDAQABo4H/MIH8MAkGA1UdEwQCMAAw
+EQYJYIZIAYb4QgEBBAQDAgeAMAsGA1UdDwQEAwIFoDATBgNVHSUEDDAKBggrBgEF
+BQcDAjAxBglghkgBhvhCAQ0EJBYiT3BlblNTTCBDZXJ0aWZpY2F0ZSBmb3IgU1NM
+IENsaWVudDAeBgNVHREEFzAVgRNjbGllbnQ3QGV4YW1wbGUuY29tMGcGA1UdHwRg
+MF4wOqA4oDaGNGxkYXA6Ly9sZGFwLmV4YW1wbGUuY29tOjM4OS9DTj1jcmwsREM9
+ZXhhbXBsZSxEQz1jb20wIKAeoByGGmh0dHA6Ly9jcmwuZXhhbXBsZS5jb20vY3Js
+MA0GCSqGSIb3DQEBBQUAA4GBACfVj52tZXG8353+dx6rUUiUKEVMcGEi7aPI5LnS
+cvXxzLZTGmKTBgRgd0wgnzyIFaAjx74QrPl4NBrVAZtf4hmpUKaM/UkSZo0U84Xq
+fZA+Xj9+06+7LrSiJlmq1YeSwbFjdbg+4JVshP2A0VeKculxW55kmaG3ZVuY0vr0
+xTLs
+-----END CERTIFICATE-----
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA3DQks0/+h03vpvRjPDlrXixiT33o0cknaffMFJmsJB4tiBGy
+E9m0zXUz/9reNsKh8HolVrZrtNO1VZjhN7r5wfIiJoFsi23AvOrBA+eAUY5agPQM
+Cp6+juP8N1Lkh/fg8yzw/con48TgXUYUyiY0DLwpFPoW0oyFAWx8NpevhAqfSk+M
+w8QgVUKo9AEIeTdiflhckY7s2zFWWdq73B2MrDKwTI1XydbYtYmk07cNCip4RJiJ
+lW6OnzqSlGIPMypQplGmSNfvbGu7UOlBUHFCUUFzdB1ur3Tk7UPY5flZqV7nSAD/
+2HYt5OslshxJ1XzkE0Eb/ySdPJaoqlh7BCWoGQIDAQABAoIBADm4pWInduXKxSYz
+a4vO1VkjM0X5ED1liCJb5TAFND1nd7HySYawi5dLwKyxl4wtKrvZmM4JFWSaFi9w
+2qB8L5nqOY90X5qQ03Px6VR3q4g1U333+uwRvovAMU3jOap2jI3R2v37rscixVlN
+1IdEymIINJCeGbtpQDgmUs0Qp95pWZTnFC68RxsgakQChUena0C/XYnWUaa1VdIv
+M1M3fb50cvv89Y3rg+XcHsFOn0EdLQYK+6/QZPCH5n+14BFsp/bxFA/nKYavTxXx
+ghh6PuB+PxrPNyr8Rwsk5h+Gh/vE9U8MDo5IDkWhqgbm++WtSQYsHkUw6iA09iU1
+0cv0krECgYEA/7D23n6g4OV4hwF3GQtYbe2OoLwB5xlyHek2v5m+2kovs5G6piVR
+NDShlNC2LYyKb4vEJL6kpSpZUYVJqbTD/ti6ByDSCIMrvASzkNee3lT4iSGtKHva
+qXn7fa2kYEa1x2/inZwh7vp9JGm4NplVKgZ0+1qKxhsxZBKakIUh6ZUCgYEA3Hg1
+qPPuJ5ZsJ8C5koctybC2r1BFMB9gOk9Vn59rkpkOdIUOyQaLuaxvScuEmPqSP2x1
+DjPKVTajEWiPkgQmAxE/Dz+y6CZ4Mh/Wfs3Y2kux/qW8SgsT2KjEN5F+yAaY9GPg
+2ED4KJjqzHoS4Km2Gqb8QQzOqbUlkmhxlpoKi3UCgYEAs57GniDItZSeagD+gIp2
+0aqbkpDgqU832olVm53O9Bw/jF8ohsUaWZlLlXZVNIRRT/EYllOS6DBq1JjU2bIS
+KbpoXM+SnMZA9/E5j9vZUAjTG8qbkSAIyRvXLz/HhJbH5lXUFbJ0KCSxut3Fuh1X
+NZGZpmXBrU+3D7z99d6Ap00CgYEAnr77vESv5ddc1x7hQA2PvZs9X2yH9QeSjUnU
+mFP87BjDHMk2BS9uamor09H0DwbVSU+51VkbRlJKBl3oirXr/OdtJXizRI92mnjs
+RG/Jxh0c9AO4WQQy7R1P88cSp8qAVfCY1H2rcefxoPwBHb11fylflyM2p2HkxM/p
+ggw2rYUCgYBOn08/jAoRERG47Dl7PNqL3pNAwDKPCjLtxnrk62gDAL1kssVJU0WD
+75fZ3V4K1cX46nqJRO68+/9jqKfqrsHipcLhjtCKHDQn0GfTdfRvaVgurUG/z3WR
+IrQF+KpYqlHXQad1MfVMfLC3hQ+VT4fQ2TuPehxSIpP4T+tpJTi/pQ==
+-----END RSA PRIVATE KEY-----

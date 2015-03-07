@@ -1,0 +1,1 @@
+V	190622233842Z		01	unknown	/C=US/ST=WA/L=Seattle/CN=intermediate-ca.example.com

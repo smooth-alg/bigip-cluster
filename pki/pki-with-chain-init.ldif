@@ -1,0 +1,289 @@
+#/etc/init.d/slapd stop
+# vi /etc/default/slapd
+
+#Modify /etc/default/slapd the line and adding:
+#SLAPD_SERVICES="ldap:// ldaps:/// ldapi:///"
+
+#Remove database files:
+#rm -rf /var/lib/ldap/*
+
+#Import new database
+#slapadd -l my_init.ldif
+
+#Restart
+#/etc/init.d/slapd start
+
+
+
+dn: dc=example,dc=com
+objectClass: dcObject
+objectClass: organizationalUnit
+dc: example
+ou: people
+
+dn: ou=people,dc=example,dc=com
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=example,dc=com
+objectClass: organizationalUnit
+ou: groups
+
+dn: cn=admin,dc=example,dc=com
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+userPassword: password 
+description: LDAP administrator
+
+
+dn: uid=admin,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: admin
+sn: admin
+givenName: admin
+cn: admin
+displayName: admin
+uidNumber: 100
+gidNumber: 1000
+userPassword: admin
+gecos: admin
+loginShell: /bin/bash
+homeDirectory: /home/admin
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 8
+shadowMax: 999999
+shadowLastChange: 10877
+mail: admin@example.com
+postalCode: 31000
+l: Toulouse
+o: Example
+mobile: +33 (0)6 xx xx xx xx
+homePhone: +33 (0)5 xx xx xx xx
+title: System Administrator
+postalAddress:
+initials: LP
+
+
+dn: uid=root,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: root
+sn: root
+givenName: root
+cn: root
+displayName: root
+uidNumber: 10
+gidNumber: 100
+userPassword: default
+gecos: root
+loginShell: /bin/bash
+homeDirectory: /root
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 8
+shadowMax: 999999
+shadowLastChange: 10877
+mail: root@example.com
+postalCode: 31000
+l: Toulouse
+o: Example
+mobile: +33 (0)6 xx xx xx xx
+homePhone: +33 (0)5 xx xx xx xx
+title: System Administrator
+postalAddress:
+initials: LP
+
+
+
+
+
+dn: cn=crl,dc=example,dc=com
+cn: crl
+sn: crl
+description: Certificate Authority and Revocation List
+cACertificate;binary:< file:///var/tmp/pki/bigip/ca.der
+certificateRevocationList;binary:< file:///var/tmp/pki/bigip/intermediate-crl.der
+authorityRevocationList;binary:< file:///var/tmp/pki/bigip/ca-crl.der
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: certificationAuthority
+
+
+
+dn: uid=client1,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: client1
+sn: client1
+givenName: client1
+cn: client1
+displayName: client1
+uidNumber: 1001
+gidNumber: 10000
+userPassword: password
+gecos: client1
+loginShell: /bin/bash
+homeDirectory: /home/client1
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 8
+shadowMax: 999999
+shadowLastChange: 10877
+mail: client1@example.com
+postalCode: 31000
+l: Toulouse
+o: Example
+mobile: +33 (0)6 xx xx xx xx
+homePhone: +33 (0)5 xx xx xx xx
+title: System Administrator
+postalAddress: 
+initials: LP
+userCertificate;binary:< file:///var/tmp/pki/bigip/client1.der
+
+
+dn: uid=client2,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: client2
+sn: client2
+givenName: client2
+cn: client2
+displayName: client2
+uidNumber: 1002
+gidNumber: 10000
+userPassword: password
+gecos: client2
+loginShell: /bin/bash
+homeDirectory: /home/client2
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 8
+shadowMax: 999999
+shadowLastChange: 10877
+mail: client2@example.com
+postalCode: 31000
+l: Toulouse
+o: Example
+mobile: +33 (0)6 xx xx xx xx
+homePhone: +33 (0)5 xx xx xx xx
+title: System Administrator
+postalAddress: 
+initials: LP
+userCertificate;binary:< file:///var/tmp/pki/bigip/client2.der
+
+
+
+dn: uid=client3,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: client3
+sn: client3
+givenName: client3
+cn: client3
+displayName: client3
+uidNumber: 1003
+gidNumber: 10000
+userPassword: password
+gecos: client3
+loginShell: /bin/bash
+homeDirectory: /home/client3
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 8
+shadowMax: 999999
+shadowLastChange: 10877
+mail: client3@example.com
+postalCode: 31000
+l: Toulouse
+o: Example
+mobile: +33 (0)6 xx xx xx xx
+homePhone: +33 (0)5 xx xx xx xx
+title: System Administrator
+postalAddress: 
+initials: LP
+userCertificate;binary:< file:///var/tmp/pki/bigip/client3.der
+
+
+
+dn: uid=client4,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: client4
+sn: client4
+givenName: client4
+cn: client4
+displayName: client4
+uidNumber: 1004
+gidNumber: 10000
+userPassword: password
+gecos: client4
+loginShell: /bin/bash
+homeDirectory: /home/client4
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 8
+shadowMax: 999999
+shadowLastChange: 10877
+mail: client4@example.com
+postalCode: 31000
+l: Toulouse
+o: Example
+mobile: +33 (0)6 xx xx xx xx
+homePhone: +33 (0)5 xx xx xx xx
+title: System Administrator
+postalAddress: 
+initials: LP
+userCertificate;binary:< file:///var/tmp/pki/bigip/client4.der
+
+
+dn: uid=client5,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: client5
+sn: client5
+givenName: client5
+cn: client5
+displayName: client5
+uidNumber: 1005
+gidNumber: 10000
+userPassword: password
+gecos: client5
+loginShell: /bin/bash
+homeDirectory: /home/client5
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 8
+shadowMax: 999999
+shadowLastChange: 10877
+mail: client5@example.com
+postalCode: 31000
+l: Toulouse
+o: Example
+mobile: +33 (0)6 xx xx xx xx
+homePhone: +33 (0)5 xx xx xx xx
+title: System Administrator
+postalAddress: 
+initials: LP
+userCertificate;binary:< file:///var/tmp/pki/bigip/client5.der
+
+
+
+

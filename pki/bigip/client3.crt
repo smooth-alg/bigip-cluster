@@ -1,0 +1,70 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4 (0x4)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=WA, L=Seattle, CN=intermediate-ca.example.com
+        Validity
+            Not Before: May 14 23:38:43 2014 GMT
+            Not After : Jun 22 23:38:43 2019 GMT
+        Subject: C=US, ST=WA, L=Seattle, OU=people, CN=client3/emailAddress=client3@example.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:96:e5:b4:b6:f9:d9:60:62:79:48:3a:5d:b1:31:
+                    40:73:f5:30:b2:65:eb:66:d5:3f:70:d1:08:71:f5:
+                    19:4c:24:7a:dc:0c:ec:52:c5:57:5e:89:da:c9:78:
+                    13:d5:56:30:aa:a6:07:cb:d1:d5:1f:86:d9:9c:1f:
+                    7f:86:9e:4a:aa:83:9d:06:96:7b:22:94:4f:1d:54:
+                    8a:30:48:40:87:83:30:e3:09:23:95:19:fd:34:6e:
+                    0e:4d:61:e1:78:e9:13:dc:a0:f1:1a:69:b1:01:bb:
+                    63:74:5c:7e:97:57:51:a9:9e:b5:fa:c7:0f:28:4f:
+                    67:c7:bb:16:8a:55:8c:dd:17
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Client
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            Netscape Comment: 
+                OpenSSL Certificate for SSL Client
+            X509v3 Subject Alternative Name: 
+                email:client3@example.com
+            X509v3 CRL Distribution Points: 
+                URI:ldap://ldap.example.com:389/CN=crl,DC=example,DC=com
+                URI:http://crl.example.com/crl
+
+    Signature Algorithm: sha1WithRSAEncryption
+        27:d7:c6:f7:0f:71:4d:bd:50:cb:49:f3:db:41:3f:0b:4a:23:
+        16:b9:ef:04:7a:12:5e:15:b1:60:75:a8:cc:c8:17:f4:c7:1e:
+        61:d1:a6:de:93:31:9e:65:8e:37:4f:c9:21:bd:61:a6:0c:e8:
+        f6:90:20:2b:78:e0:d4:a7:af:95:45:80:03:11:b9:c3:41:7e:
+        70:7e:84:41:66:23:8f:f3:ae:67:5b:5b:2e:eb:80:47:48:34:
+        f8:e5:1b:86:c0:82:88:09:c7:3a:d7:f8:75:89:92:6c:6a:3f:
+        89:31:4d:cd:be:da:b5:7c:3a:59:6d:fe:c7:ab:fb:81:c6:86:
+        4b:ff
+-----BEGIN CERTIFICATE-----
+MIIDOzCCAqSgAwIBAgIBBDANBgkqhkiG9w0BAQUFADBSMQswCQYDVQQGEwJVUzEL
+MAkGA1UECBMCV0ExEDAOBgNVBAcTB1NlYXR0bGUxJDAiBgNVBAMTG2ludGVybWVk
+aWF0ZS1jYS5leGFtcGxlLmNvbTAeFw0xNDA1MTQyMzM4NDNaFw0xOTA2MjIyMzM4
+NDNaMHMxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJXQTEQMA4GA1UEBxMHU2VhdHRs
+ZTEPMA0GA1UECxMGcGVvcGxlMRAwDgYDVQQDEwdjbGllbnQzMSIwIAYJKoZIhvcN
+AQkBFhNjbGllbnQzQGV4YW1wbGUuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCB
+iQKBgQCW5bS2+dlgYnlIOl2xMUBz9TCyZetm1T9w0Qhx9RlMJHrcDOxSxVdeidrJ
+eBPVVjCqpgfL0dUfhtmcH3+Gnkqqg50GlnsilE8dVIowSECHgzDjCSOVGf00bg5N
+YeF46RPcoPEaabEBu2N0XH6XV1GpnrX6xw8oT2fHuxaKVYzdFwIDAQABo4H/MIH8
+MAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgeAMAsGA1UdDwQEAwIFoDATBgNV
+HSUEDDAKBggrBgEFBQcDAjAxBglghkgBhvhCAQ0EJBYiT3BlblNTTCBDZXJ0aWZp
+Y2F0ZSBmb3IgU1NMIENsaWVudDAeBgNVHREEFzAVgRNjbGllbnQzQGV4YW1wbGUu
+Y29tMGcGA1UdHwRgMF4wOqA4oDaGNGxkYXA6Ly9sZGFwLmV4YW1wbGUuY29tOjM4
+OS9DTj1jcmwsREM9ZXhhbXBsZSxEQz1jb20wIKAeoByGGmh0dHA6Ly9jcmwuZXhh
+bXBsZS5jb20vY3JsMA0GCSqGSIb3DQEBBQUAA4GBACfXxvcPcU29UMtJ89tBPwtK
+Ixa57wR6El4VsWB1qMzIF/THHmHRpt6TMZ5ljjdPySG9YaYM6PaQICt44NSnr5VF
+gAMRucNBfnB+hEFmI4/zrmdbWy7rgEdINPjlG4bAgogJxzrX+HWJkmxqP4kxTc2+
+2rV8Ollt/ser+4HGhkv/
+-----END CERTIFICATE-----
